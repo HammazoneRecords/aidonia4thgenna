@@ -118,7 +118,7 @@ export default function App() {
         <Info size={13} style={{ color: 'rgba(251,191,36,0.85)', flexShrink: 0 }} />
         <p className="font-sans text-[10px] uppercase tracking-widest text-center" style={{ color: 'rgba(251,191,36,0.65)' }}>
           Working draft — buyer assumes responsibility for clearing image &amp; likeness rights with Aidonia. This site is available for{' '}
-          <a href="https://mindwaveja.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }} className="hover:opacity-100 transition-opacity">purchase</a>.
+          <a href="https://mindwaveja.com/marketplace/artist-digital-territory-license" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }} className="hover:opacity-100 transition-opacity">purchase</a>.
         </p>
       </div>
 
