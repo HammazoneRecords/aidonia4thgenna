@@ -7,7 +7,7 @@ const MERCH = [
     name: 'Long Sleeve Genn4 Shirt',
     category: 'Apparel',
     tag: 'NEW',
-    image: '/Front (1).png',
+    image: '/front-31-cutout.png',
   },
   {
     id: 'genna-jacket',
