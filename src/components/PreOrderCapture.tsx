@@ -44,21 +44,17 @@ export default function PreOrderCapture({ productId, className }: PreOrderCaptur
     };
 
     try {
-      if (ENDPOINT) {
-        const res = await fetch(`${ENDPOINT}/v1/interest`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-        if (!res.ok) throw new Error(`Status ${res.status}`);
-      } else {
-        console.log('[PreOrderCapture — V1 stub] payload:', payload);
-        await new Promise(r => setTimeout(r, 500));
-      }
+      if (!ENDPOINT) throw new Error('Lead capture endpoint is not configured');
+      const res = await fetch(`${ENDPOINT}/v1/interest`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`Lead capture failed with status ${res.status}`);
       setDone(true);
     } catch (err) {
-      const msg = err instanceof Error ? err.message : 'Something went wrong. Try again.';
-      setError(msg);
+      console.error(err);
+      setError('We could not save your interest. Please try again.');
     } finally {
       setSubmitting(false);
     }
