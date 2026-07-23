@@ -66,33 +66,10 @@ export default function EyeDonia({ onBack }: EyeDoniaProps) {
         <div className="w-24" />
       </nav>
 
-      {/* Hero */}
-      <header className="relative pt-36 pb-24 md:pt-44 md:pb-32 px-6 md:px-12 overflow-hidden">
+      {/* Hero — collapsed to spacer only */}
+      <header className="relative pt-12 pb-0 md:pt-16 md:pb-0 px-6 md:px-12 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1a1000] via-brand-black to-brand-black" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-gold/5 rounded-full blur-[120px] pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="font-sans text-xs uppercase tracking-[0.5em] text-brand-gold/50 mb-6">
-              An Aidonia Brand
-            </p>
-            <h1 className="text-[clamp(3rem,10vw,9rem)] font-sans font-black leading-none mb-4 tracking-tighter">
-              <span className="text-brand-gold">Eye</span>-donia
-            </h1>
-            <p className="font-sans text-xl md:text-3xl font-light text-white/40 tracking-[0.3em] uppercase mb-10">
-              4th Genna Vision.
-            </p>
-            <p className="text-base md:text-lg text-white/50 max-w-lg leading-relaxed mb-10">
-              Not a fashion accessory. A declaration. Worn by those who were already going to stand out — with or without the frames.
-            </p>
-            <p className="inline-flex items-center gap-2 border border-brand-gold/30 text-brand-gold/60 px-8 py-4 font-sans font-bold uppercase tracking-widest text-sm cursor-default">
-              Collection Coming Soon
-            </p>
-          </motion.div>
-        </div>
       </header>
 
       {/* Tagline strip */}

@@ -19,7 +19,6 @@ export default function Header({ onEyeDonia }: HeaderProps) {
   const navLinks = [
     { name: 'The Vault', href: '#the-vault', action: null },
     { name: 'Frsh Drop', href: '#frsh-drop', action: null },
-    { name: 'Lookbook', href: '#lookbook', action: null },
     { name: 'Eye-donia', href: null, action: onEyeDonia },
   ];
 
@@ -64,7 +63,7 @@ export default function Header({ onEyeDonia }: HeaderProps) {
               <a href="https://www.instagram.com/aidonia4thgenna/" target="_blank" rel="noopener noreferrer">
                 <Instagram size={18} className="hover:text-brand-gold cursor-pointer transition-colors" />
               </a>
-              <a href="https://www.youtube.com/@AidoniaVEVO" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@AidoniaVEVO/videos" target="_blank" rel="noopener noreferrer">
                 <Youtube size={18} className="hover:text-brand-gold cursor-pointer transition-colors" />
               </a>
               <a href="https://music.apple.com/us/artist/aidonia/183142674" target="_blank" rel="noopener noreferrer">
@@ -133,7 +132,7 @@ export default function Header({ onEyeDonia }: HeaderProps) {
                 <p className="font-sans font-bold uppercase tracking-widest text-xs opacity-50">Follow the movement</p>
                 <div className="flex gap-6">
                   <a href="https://www.instagram.com/aidonia4thgenna/" target="_blank" rel="noopener noreferrer"><Instagram size={24} /></a>
-                  <a href="https://www.youtube.com/@AidoniaVEVO" target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
+                  <a href="https://www.youtube.com/@AidoniaVEVO/videos" target="_blank" rel="noopener noreferrer"><Youtube size={24} /></a>
                   <a href="https://music.apple.com/us/artist/aidonia/183142674" target="_blank" rel="noopener noreferrer"><Music size={24} /></a>
                 </div>
               </div>

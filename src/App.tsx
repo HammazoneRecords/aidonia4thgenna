@@ -11,6 +11,7 @@ import EyeDonia from './components/EyeDonia';
 
 type Page = 'home' | 'eye-donia';
 
+
 export default function App() {
   const [page, setPage] = useState<Page>('home');
   const { scrollYProgress } = useScroll();
@@ -33,7 +34,7 @@ export default function App() {
       <main className="relative">
         {/* Hero */}
         <section id="home" className="h-[90vh] lg:h-screen w-full relative">
-          <Hero />
+          <Hero onEyeDonia={() => setPage('eye-donia')} />
         </section>
 
         {/* Ghost watermark sections */}
@@ -113,6 +114,7 @@ export default function App() {
         <Footer className="max-w-7xl mx-auto" onEyeDonia={() => setPage('eye-donia')} />
       </main>
 
+      
       {/* DISCLAIMER BANNER */}
       <div className="fixed bottom-0 left-0 right-0 z-50 px-4 py-2 flex items-center justify-center gap-2" style={{ background: 'rgba(245,158,11,0.08)', borderTop: '1px solid rgba(245,158,11,0.2)' }}>
         <Info size={13} style={{ color: 'rgba(251,191,36,0.85)', flexShrink: 0 }} />

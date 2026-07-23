@@ -1,4 +1,4 @@
-// RAAS Interest-Capture Catalog — single source of truth for the Aidonia site.
+// Interest-capture catalog — single source of truth for the Aidonia site.
 // Drives <PreOrderCapture> dropdowns so users never type product names.
 
 export const SITE_SLUG = 'aidonia-4thgenna';

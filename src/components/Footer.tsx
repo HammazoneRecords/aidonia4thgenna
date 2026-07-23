@@ -29,7 +29,6 @@ export default function Footer({ className = '', onEyeDonia }: { className?: str
                 { label: 'Home', href: '#home', action: null },
                 { label: 'The Vault', href: '#the-vault', action: null },
                 { label: 'Frsh Drop', href: '#frsh-drop', action: null },
-                { label: 'Lookbook', href: '#lookbook', action: null },
                 { label: 'Eye-donia', href: null, action: onEyeDonia },
               ].map((l) => (
                 <li key={l.label}>
@@ -57,7 +56,7 @@ export default function Footer({ className = '', onEyeDonia }: { className?: str
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/@AidoniaVEVO" target="_blank" rel="noopener noreferrer"
+                <a href="https://www.youtube.com/@AidoniaVEVO/videos" target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-3 font-sans text-base hover:text-brand-gold transition-colors text-white/70">
                   <Youtube size={14} /> YouTube
                 </a>
@@ -73,9 +72,14 @@ export default function Footer({ className = '', onEyeDonia }: { className?: str
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-10 border-t border-white/5">
-          <p className="font-sans text-[10px] font-bold uppercase tracking-[0.4em] text-white/25">
-            © 2025 Aidonia Worldwide · All Rights Reserved
-          </p>
+          <div className="space-y-2">
+            <p className="font-sans text-[9px] text-white/20 leading-relaxed max-w-md">
+              Buyer assumes responsibility for clearing image &amp; likeness rights with Aidonia. This site or one like it is available for purchase.
+            </p>
+            <p className="font-sans text-[10px] font-bold uppercase tracking-[0.4em] text-white/25">
+              © 2025 Aidonia Worldwide · All Rights Reserved
+            </p>
+          </div>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-black hover:border-brand-gold transition-all duration-500"

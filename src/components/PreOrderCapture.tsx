@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { Check, Loader2 } from 'lucide-react';
-import { SITE_SLUG, ARTIST_NAME, getProduct } from '../raas-catalog';
+import { SITE_SLUG, ARTIST_NAME, getProduct } from '../interest-catalog';
 
 interface PreOrderCaptureProps {
   productId: string;
   className?: string;
 }
 
-const ENDPOINT = (import.meta.env.VITE_RAAS_API as string | undefined) ?? '';
+const ENDPOINT = (import.meta.env.VITE_INTEREST_API as string | undefined) ?? '';
 
 export default function PreOrderCapture({ productId, className }: PreOrderCaptureProps) {
   const product = getProduct(productId);

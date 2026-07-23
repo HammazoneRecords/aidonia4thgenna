@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-export default function Hero() {
+export default function Hero({ onEyeDonia }: { onEyeDonia?: () => void }) {
   return (
     <section
       id="home"
@@ -94,17 +94,17 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4"
         >
           <a
-            href="#the-vault"
+            href="#frsh-drop"
             className="px-10 py-4 bg-brand-gold text-brand-black font-sans font-bold uppercase tracking-widest text-sm hover:bg-white transition-colors duration-500"
           >
-            Explore the Vault
+            Frsh Drop
           </a>
-          <a
-            href="#lookbook"
+          <button
+            onClick={onEyeDonia}
             className="px-10 py-4 border border-white/20 text-white font-sans font-bold uppercase tracking-widest text-sm hover:border-brand-gold hover:text-brand-gold transition-all duration-300"
           >
-            Lookbook
-          </a>
+            Eye-donia
+          </button>
         </motion.div>
       </div>
 
